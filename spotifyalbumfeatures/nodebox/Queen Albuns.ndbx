@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="21" type="file" uuid="22d7147c-02fa-401e-ac3f-c09ecd44cfd0">
+    <property name="canvasHeight" value="3000"/>
+    <property name="canvasWidth" value="2000"/>
+    <property name="canvasX" value="0"/>
+    <property name="canvasY" value="0"/>
+    <node name="root" prototype="core.network" renderedChild="finalimage">
+        <node name="album_id" position="2.00,-14.00" prototype="data.lookup">
+            <port name="key" type="string" value="album_id"/>
+        </node>
+        <node name="background" position="20.00,1.00" prototype="corevector.rect">
+            <port name="width" type="float" value="2000.0"/>
+            <port name="height" type="float" value="3000.0"/>
+        </node>
+        <node name="ceil1" position="-2.00,-9.00" prototype="math.ceil"/>
+        <node name="circleMaxSize" position="39.00,-17.00" prototype="math.number">
+            <port name="value" type="float" value="100.0"/>
+        </node>
+        <node name="colorize10" position="25.00,-8.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#ec5ce974"/>
+            <port name="stroke" type="color" value="#ac000000"/>
+            <port name="strokeWidth" type="float" value="1.0"/>
+        </node>
+        <node name="colorize11" position="30.00,-8.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#ece05c74"/>
+            <port name="stroke" type="color" value="#ac000000"/>
+            <port name="strokeWidth" type="float" value="1.0"/>
+        </node>
+        <node name="colorize12" position="23.00,2.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#ffffffff"/>
+            <port name="stroke" type="color" value="#ac000000"/>
+            <port name="strokeWidth" type="float" value="1.0"/>
+        </node>
+        <node name="colorize13" position="26.00,2.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#ffffffff"/>
+            <port name="stroke" type="color" value="#ac000000"/>
+            <port name="strokeWidth" type="float" value="1.0"/>
+        </node>
+        <node name="colorize14" position="30.00,2.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#ffffffff"/>
+            <port name="stroke" type="color" value="#ac000000"/>
+            <port name="strokeWidth" type="float" value="1.0"/>
+        </node>
+        <node name="colorize15" position="36.00,-8.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#39934a74"/>
+            <port name="stroke" type="color" value="#ac000000"/>
+            <port name="strokeWidth" type="float" value="1.0"/>
+        </node>
+        <node name="colorize6" position="15.00,-8.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#ec9a2374"/>
+            <port name="stroke" type="color" value="#ac000000"/>
+            <port name="strokeWidth" type="float" value="1.0"/>
+        </node>
+        <node name="colorize7" position="19.00,-8.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#1f16ec74"/>
+            <port name="stroke" type="color" value="#ac000000"/>
+            <port name="strokeWidth" type="float" value="1.0"/>
+        </node>
+        <node name="colorize8" position="20.00,2.00" prototype="corevector.colorize">
+            <port name="stroke" type="color" value="#ac000000"/>
+            <port name="strokeWidth" type="float" value="1.0"/>
+        </node>
+        <node name="colorize9" position="5.00,-8.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#fffffffd"/>
+            <port name="stroke" type="color" value="#ac000000"/>
+            <port name="strokeWidth" type="float" value="1.0"/>
+        </node>
+        <node name="combine1" position="24.00,-4.00" prototype="list.combine"/>
+        <node name="convert_range2" position="15.00,-12.00" prototype="math.convert_range">
+            <port name="target_start" type="float" value="20.0"/>
+            <port name="target_end" type="float" value="50.0"/>
+            <port name="method" type="string" value="wrap"/>
+        </node>
+        <node name="convert_range4" position="20.00,-12.00" prototype="math.convert_range">
+            <port name="target_start" type="float" value="20.0"/>
+            <port name="target_end" type="float" value="50.0"/>
+            <port name="method" type="string" value="wrap"/>
+        </node>
+        <node name="convert_range5" position="25.00,-12.00" prototype="math.convert_range">
+            <port name="target_start" type="float" value="20.0"/>
+            <port name="target_end" type="float" value="50.0"/>
+            <port name="method" type="string" value="wrap"/>
+        </node>
+        <node name="convert_range6" position="30.00,-12.00" prototype="math.convert_range">
+            <port name="target_start" type="float" value="20.0"/>
+            <port name="target_end" type="float" value="50.0"/>
+            <port name="method" type="string" value="wrap"/>
+        </node>
+        <node name="convert_range7" position="36.00,-12.00" prototype="math.convert_range">
+            <port name="target_start" type="float" value="30.0"/>
+            <port name="target_end" type="float" value="50.0"/>
+            <port name="method" type="string" value="wrap"/>
+        </node>
+        <node name="count1" position="2.00,-13.00" prototype="list.count"/>
+        <node name="danceability" position="20.00,-16.00" prototype="data.lookup">
+            <port name="key" type="string" value="danceability"/>
+        </node>
+        <node name="divide1" position="13.00,-4.00" prototype="math.divide">
+            <port name="value1" type="float" value="200.0"/>
+        </node>
+        <node name="ellipse1" position="-2.00,-18.00" prototype="corevector.ellipse">
+            <port name="position" type="point" value="-25.84,5.87"/>
+            <port name="width" type="float" value="300.0"/>
+            <port name="height" type="float" value="300.0"/>
+        </node>
+        <node name="ellipse2" position="15.00,-9.00" prototype="corevector.ellipse">
+            <port name="position" type="point" value="100.00,-10.00"/>
+            <port name="width" type="float" value="23.0"/>
+        </node>
+        <node name="ellipse3" position="19.00,-9.00" prototype="corevector.ellipse">
+            <port name="position" type="point" value="250.00,-10.00"/>
+            <port name="width" type="float" value="23.0"/>
+        </node>
+        <node name="ellipse4" position="25.00,-9.00" prototype="corevector.ellipse">
+            <port name="position" type="point" value="400.00,-10.00"/>
+            <port name="width" type="float" value="23.0"/>
+        </node>
+        <node name="ellipse5" position="30.00,-9.00" prototype="corevector.ellipse">
+            <port name="position" type="point" value="550.00,-10.00"/>
+            <port name="width" type="float" value="23.0"/>
+        </node>
+        <node name="ellipse6" position="36.00,-9.00" prototype="corevector.ellipse">
+            <port name="position" type="point" value="700.00,-10.00"/>
+            <port name="width" type="float" value="23.0"/>
+        </node>
+        <node name="energy" position="15.00,-16.00" prototype="data.lookup">
+            <port name="key" type="string" value="energy"/>
+        </node>
+        <node name="finalimage" position="18.00,6.00" prototype="list.combine"/>
+        <node name="footer" position="30.00,1.00" prototype="corevector.textpath">
+            <port name="text" type="string" value="by haschdl"/>
+            <port name="font_name" type="string" value="Perpetua Bold"/>
+            <port name="font_size" type="float" value="27.0"/>
+            <port name="align" type="string" value="RIGHT"/>
+            <port name="position" type="point" value="950.00,1445.00"/>
+        </node>
+        <node name="frame1" position="-2.00,-12.00" prototype="core.frame"/>
+        <node name="import_csv1" position="16.00,-21.00" prototype="data.import_csv">
+            <port name="file" type="string" value="Spotify_Queen_Albums.csv"/>
+            <port name="delimiter" type="string" value="tab"/>
+        </node>
+        <node name="lookup1" position="5.00,-10.00" prototype="data.lookup">
+            <port name="key" type="string" value="album_name_short"/>
+        </node>
+        <node name="loudness" position="30.00,-16.00" prototype="data.lookup">
+            <port name="key" type="string" value="loudness"/>
+        </node>
+        <node name="make_point1" position="11.00,0.00" prototype="corevector.make_point"/>
+        <node name="make_point2" position="16.00,0.00" prototype="corevector.make_point"/>
+        <node name="max3" position="15.00,-14.00" prototype="math.max"/>
+        <node name="max4" position="20.00,-14.00" prototype="math.max"/>
+        <node name="max5" position="25.00,-14.00" prototype="math.max"/>
+        <node name="max6" position="30.00,-14.00" prototype="math.max"/>
+        <node name="max7" position="36.00,-14.00" prototype="math.max"/>
+        <node name="min2" position="17.00,-14.00" prototype="math.min"/>
+        <node name="min3" position="22.00,-14.00" prototype="math.min"/>
+        <node name="min4" position="27.00,-14.00" prototype="math.min"/>
+        <node name="min5" position="32.00,-14.00" prototype="math.min"/>
+        <node name="min6" position="39.00,-14.00" prototype="math.min"/>
+        <node name="mod1" position="-2.00,-10.00" prototype="math.mod"/>
+        <node name="number1" position="6.00,-3.00" prototype="math.number">
+            <port name="value" type="float" value="1868.0"/>
+        </node>
+        <node name="number2" position="15.00,-15.00" prototype="math.number"/>
+        <node name="number4" position="20.00,-15.00" prototype="math.number"/>
+        <node name="number5" position="25.00,-15.00" prototype="math.number"/>
+        <node name="number6" position="30.00,-15.00" prototype="math.number"/>
+        <node name="number7" position="36.00,-15.00" prototype="math.number"/>
+        <node name="range1" position="13.00,-3.00" prototype="math.range">
+            <port name="end" type="float" value="200.0"/>
+            <port name="step" type="float" value="20.0"/>
+        </node>
+        <node name="resample1" position="-2.00,-16.00" prototype="corevector.resample">
+            <port name="method" type="string" value="amount"/>
+        </node>
+        <node name="speed" position="-2.00,-11.00" prototype="math.divide">
+            <port name="value2" type="float" value="15.0"/>
+        </node>
+        <node name="subtitle" position="26.00,1.00" prototype="corevector.textpath">
+            <port name="text" type="string" value="energy | danceability | valence | loudness | tempo"/>
+            <port name="font_name" type="string" value="Perpetua Bold"/>
+            <port name="font_size" type="float" value="70.0"/>
+            <port name="position" type="point" value="0.00,-772.00"/>
+        </node>
+        <node name="tempo" position="36.00,-16.00" prototype="data.lookup">
+            <port name="key" type="string" value="tempo"/>
+        </node>
+        <node name="textpath1" position="3.00,-9.00" prototype="corevector.textpath">
+            <port name="font_name" type="string" value="Bauhaus 93"/>
+            <port name="font_size" type="float" value="48.0"/>
+            <port name="align" type="string" value="RIGHT"/>
+            <port name="position" type="point" value="15.00,0.00"/>
+        </node>
+        <node name="title" position="23.00,1.00" prototype="corevector.textpath">
+            <port name="text" type="string" value="Queen"/>
+            <port name="font_name" type="string" value="Elephant"/>
+            <port name="font_size" type="float" value="500.0"/>
+            <port name="position" type="point" value="0.00,-989.00"/>
+        </node>
+        <node name="translate1" position="11.00,1.00" prototype="corevector.translate"/>
+        <node name="translate2" position="16.00,1.00" prototype="corevector.translate"/>
+        <node name="translate3" position="11.00,2.00" prototype="corevector.translate">
+            <port name="translate" type="point" value="-105.00,-580.00"/>
+        </node>
+        <node name="translate4" position="16.00,2.00" prototype="corevector.translate">
+            <port name="translate" type="point" value="-79.00,-580.00"/>
+        </node>
+        <node name="valence" position="25.00,-16.00" prototype="data.lookup">
+            <port name="key" type="string" value="valence"/>
+        </node>
+        <conn input="resample1.shape" output="ellipse1"/>
+        <conn input="lookup1.list" output="import_csv1"/>
+        <conn input="textpath1.text" output="lookup1"/>
+        <conn input="album_id.list" output="import_csv1"/>
+        <conn input="count1.list" output="album_id"/>
+        <conn input="resample1.points" output="count1"/>
+        <conn input="mod1.value2" output="count1"/>
+        <conn input="ceil1.value" output="mod1"/>
+        <conn input="speed.value1" output="frame1"/>
+        <conn input="mod1.value1" output="speed"/>
+        <conn input="convert_range2.source_end" output="max3"/>
+        <conn input="convert_range2.source_start" output="min2"/>
+        <conn input="max3.values" output="number2"/>
+        <conn input="min2.values" output="number2"/>
+        <conn input="convert_range2.value" output="number2"/>
+        <conn input="number2.value" output="energy"/>
+        <conn input="convert_range4.source_end" output="max4"/>
+        <conn input="convert_range4.source_start" output="min3"/>
+        <conn input="max4.values" output="number4"/>
+        <conn input="min3.values" output="number4"/>
+        <conn input="convert_range4.value" output="number4"/>
+        <conn input="number4.value" output="danceability"/>
+        <conn input="convert_range5.source_end" output="max5"/>
+        <conn input="convert_range5.source_start" output="min4"/>
+        <conn input="max5.values" output="number5"/>
+        <conn input="min4.values" output="number5"/>
+        <conn input="convert_range5.value" output="number5"/>
+        <conn input="number5.value" output="valence"/>
+        <conn input="max6.values" output="number6"/>
+        <conn input="min5.values" output="number6"/>
+        <conn input="convert_range6.value" output="number6"/>
+        <conn input="number6.value" output="loudness"/>
+        <conn input="translate1.translate" output="make_point1"/>
+        <conn input="range1.step" output="divide1"/>
+        <conn input="divide1.value2" output="count1"/>
+        <conn input="divide1.value1" output="number1"/>
+        <conn input="range1.end" output="number1"/>
+        <conn input="translate2.shape" output="combine1"/>
+        <conn input="ellipse2.height" output="convert_range2"/>
+        <conn input="ellipse2.width" output="convert_range2"/>
+        <conn input="colorize6.shape" output="ellipse2"/>
+        <conn input="combine1.list1" output="colorize6"/>
+        <conn input="colorize7.shape" output="ellipse3"/>
+        <conn input="ellipse3.width" output="convert_range4"/>
+        <conn input="ellipse3.height" output="convert_range4"/>
+        <conn input="combine1.list2" output="colorize7"/>
+        <conn input="finalimage.list1" output="colorize8"/>
+        <conn input="colorize9.shape" output="textpath1"/>
+        <conn input="translate1.shape" output="colorize9"/>
+        <conn input="translate3.shape" output="translate1"/>
+        <conn input="finalimage.list5" output="translate3"/>
+        <conn input="energy.list" output="import_csv1"/>
+        <conn input="valence.list" output="import_csv1"/>
+        <conn input="danceability.list" output="import_csv1"/>
+        <conn input="loudness.list" output="import_csv1"/>
+        <conn input="colorize8.shape" output="background"/>
+        <conn input="translate4.shape" output="translate2"/>
+        <conn input="finalimage.list4" output="translate4"/>
+        <conn input="colorize10.shape" output="ellipse4"/>
+        <conn input="ellipse4.width" output="convert_range5"/>
+        <conn input="ellipse4.height" output="convert_range5"/>
+        <conn input="combine1.list7" output="colorize10"/>
+        <conn input="colorize11.shape" output="ellipse5"/>
+        <conn input="ellipse5.width" output="convert_range6"/>
+        <conn input="ellipse5.height" output="convert_range6"/>
+        <conn input="combine1.list6" output="colorize11"/>
+        <conn input="convert_range6.source_end" output="min5"/>
+        <conn input="convert_range6.source_start" output="max6"/>
+        <conn input="finalimage.list6" output="colorize13"/>
+        <conn input="max7.values" output="number7"/>
+        <conn input="min6.values" output="number7"/>
+        <conn input="convert_range7.value" output="number7"/>
+        <conn input="number7.value" output="tempo"/>
+        <conn input="tempo.list" output="import_csv1"/>
+        <conn input="colorize15.shape" output="ellipse6"/>
+        <conn input="ellipse6.width" output="convert_range7"/>
+        <conn input="ellipse6.height" output="convert_range7"/>
+        <conn input="combine1.list5" output="colorize15"/>
+        <conn input="convert_range7.source_end" output="max7"/>
+        <conn input="convert_range7.source_start" output="min6"/>
+        <conn input="finalimage.list7" output="colorize14"/>
+        <conn input="finalimage.list3" output="colorize12"/>
+        <conn input="colorize12.shape" output="title"/>
+        <conn input="colorize14.shape" output="footer"/>
+        <conn input="colorize13.shape" output="subtitle"/>
+        <conn input="translate2.translate" output="make_point2"/>
+        <conn input="make_point2.y" output="range1"/>
+        <conn input="make_point1.y" output="range1"/>
+        <conn input="convert_range7.target_end" output="circleMaxSize"/>
+        <conn input="convert_range6.target_end" output="circleMaxSize"/>
+        <conn input="convert_range5.target_end" output="circleMaxSize"/>
+        <conn input="convert_range4.target_end" output="min6"/>
+        <conn input="convert_range2.target_end" output="circleMaxSize"/>
+    </node>
+</ndbx>

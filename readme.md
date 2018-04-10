@@ -8,7 +8,7 @@ One generative art project per folder. Folders starting with P are [Processing](
 * [Queen](/pySpotifyAlbumFeatures)
   A visualization of all Queen albums according to danceability and other measures. Data from Spotify API.
   
-  [![Queen albums](/pySpotifyAlbumFeatures/nodebox/QueenAlbumFeaturesSmall.png)]((/pySpotifyAlbumFeatures))
+  [![Queen albums](/pySpotifyAlbumFeatures/nodebox/QueenAlbumFeaturesSmall.png)](/pySpotifyAlbumFeatures)
 
 
 ## Notes about Processing sketches

@@ -1,3 +1,11 @@
+---
+layout: default
+---
+
+
+* Will be replaced with the ToC
+{:toc}
+
 # Generative art projects
 
 * [Triangles](/PTriangles) Spring 2018

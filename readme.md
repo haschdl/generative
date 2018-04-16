@@ -2,22 +2,22 @@
 layout: default
 ---
 
+# Generative art projects
+{:.no_toc}
 
 * Will be replaced with the ToC
 {:toc}
 
-# Generative art projects
-
-* [Triangles](/PTriangles) Spring 2018
+## [Triangles](/PTriangles) Spring 2018
   A collage on satellite imagery from São Paulo, more specifically from the [west access to city](https://www.google.se/maps/@-23.5254695,-46.7478157,14.44z).
   ![SaoPaulo sketch](/PTriangles/out/ssmall.jpg)
-* [Queen](/pySpotifyAlbumFeatures) Autumn 2017
+## [Queen](/pySpotifyAlbumFeatures) Autumn 2017
   A visualization of all Queen albums according to danceability and other measures. Data from Spotify API.
   
   [![Queen albums](/pySpotifyAlbumFeatures/nodebox/QueenAlbumFeaturesSmall.png)](/pySpotifyAlbumFeatures)
 
 
-# Technical notes
+## Technical notes
  * One generative art project per folder. 
  * Projects starting with P are [Processing](processing.org) sketches; pyXXX are Python-based, otherwise a combination of techniques & languages.
  

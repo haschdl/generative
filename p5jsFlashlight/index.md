@@ -1,5 +1,6 @@
 ---
 layout: default
 jsarr:
-     - sketch.js
+- sketch.js
 ---
+# Sketch

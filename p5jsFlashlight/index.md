@@ -1,2 +1,5 @@
+---
+layout: default
+---
 jsarr:
-     - graphs/dag_default.js
+     - sketch.js

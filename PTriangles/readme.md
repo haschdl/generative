@@ -1,4 +1,5 @@
-<<<<<<< HEAD
+---
+---
 # The output
 ![São Paulo](./out/small.jpg)
 

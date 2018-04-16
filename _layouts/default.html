@@ -8,11 +8,11 @@
     <meta name="theme-color" content="#157878">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
-    {% if page.jsarr %}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.15.0/vis.min.js" type="text/javascript"></script>
-    <link rel="https://cdnjs.cloudflare.com/ajax/libs/vis/4.15.0/vis.min.css"></link>
-    {% endif %}
-
+ {% for js in page.jsarr %}
+     <script type="text/javascript">
+     {% include {{ js }} %}
+     </script>
+ {% endfor %}
 
   </head>
   <body>

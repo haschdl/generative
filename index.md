@@ -16,6 +16,11 @@ layout: default
   
   [![Queen albums](/pySpotifyAlbumFeatures/nodebox/QueenAlbumFeaturesSmall.png)](/pySpotifyAlbumFeatures)
 
+## [Flashlight](./p5jsFlashlight/) Sprint 2017
+  Interactive sketch.
+  
+  [![Flashlight](/p5jsFlashlight/images/flashlight_p5js_small.png)](/p5jsFlashlight)
+  
 
 ## Technical notes
  * One generative art project per folder. 

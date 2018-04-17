@@ -58,7 +58,7 @@ function setup() {
     var cv = createCanvas(windowWidth, windowHeight);
     var mainSection = document.querySelectorAll("*[class='main-content']")[0];
     cv.parent(mainSection);
-    cv.resize(mainSection.offsetWidth, mainSection.offsetHeight);
+    cv.resize(windowWidth, mainSection.clientHeight);
     background(0);
 
 

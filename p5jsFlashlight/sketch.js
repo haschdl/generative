@@ -50,8 +50,8 @@ function preload() {
     }
 
 
-    capture = loadImage("../media/" + imgNumber + ".jpg");
-    capturePixels = loadImage("../media/" + imgNumber + ".jpg");
+    capture = loadImage("/images/" + imgNumber + ".jpg");
+    capturePixels = loadImage("/images/" + imgNumber + ".jpg");
 }
 function setup() {
     //forcing landscape also on mobile

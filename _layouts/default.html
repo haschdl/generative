@@ -8,6 +8,11 @@
     <meta name="theme-color" content="#157878">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
+    
+ {% if page.jsarr %}
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"/>
+ {% endfor %}
+    
  {% for js in page.jsarr %}
      <script type="text/javascript">
      {% include_relative {{ js }} %}

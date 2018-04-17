@@ -25,9 +25,9 @@
   </head>
   <body>
     <section class="page-header" style="padding: 0">
-      <h1 class="project-name" style="display: inline; padding: 0">{{ site.title | default: site.github.repository_name }}</h1>
+      <h1 class="project-name" style="display: inline; padding: 10px">{{ site.title | default: site.github.repository_name }}</h1>
       {% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
+        <a href="javascript:history.back()" >Back</a>
       {% endif %}
       {% if site.show_downloads %}
         <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
@@ -35,7 +35,7 @@
       {% endif %}
     </section>
 
-    <section class="main-content">
+    <section class="main-content" style="padding: 0">
       {{ content }}
     </section>
 

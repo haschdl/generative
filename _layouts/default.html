@@ -10,7 +10,7 @@
 
  {% for js in page.jsarr %}
      <script type="text/javascript">
-     {% include {{ js }} %}
+     {% include_relative {{ js }} %}
      </script>
  {% endfor %}
 

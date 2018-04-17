@@ -55,11 +55,11 @@ function preload() {
 }
 function setup() {
     //forcing landscape also on mobile
-    var cv = createCanvas(windowWidth, windowHeight);
+    var cv = createCanvas(100, 100);
     var mainSection = document.querySelectorAll("*[class='main-content']")[0];
     cv.parent(mainSection);
     
-    cv.resize(mainSection.offsetWidth, mainSection.offsetHeight);
+    cv.resize(windowWidth, mainSection.offsetHeight);
     cv.style('display', 'block'); //see https://github.com/processing/p5.js/wiki/Positioning-your-canvas#making-the-canvas-fill-the-window
     background(0);
 

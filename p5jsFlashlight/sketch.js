@@ -59,7 +59,7 @@ function setup() {
     var mainSection = document.querySelectorAll("*[class='main-content']")[0];
     cv.parent(mainSection);
     
-    cv.resize(mainSection.offsetWidth, mainSection.offsetHeigth);
+    cv.resize(mainSection.offsetWidth, mainSection.offsetHeight);
     cv.style('display', 'block'); //see https://github.com/processing/p5.js/wiki/Positioning-your-canvas#making-the-canvas-fill-the-window
     background(0);
 

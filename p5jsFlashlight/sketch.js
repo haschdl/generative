@@ -56,12 +56,13 @@ function preload() {
 function setup() {
     //forcing landscape also on mobile
     var cv = createCanvas(100, 100);
+    cv.style('display', 'block'); //see https://github.com/processing/p5.js/wiki/Positioning-your-canvas#making-the-canvas-fill-the-window
     var mainSection = document.querySelectorAll("*[class='main-content']")[0];
     var header = document.querySelectorAll("*[class='page-header']")[0];
     cv.parent(mainSection);
     
     cv.resize(windowWidth, windowHeight -  header.offsetHeight);
-    cv.style('display', 'block'); //see https://github.com/processing/p5.js/wiki/Positioning-your-canvas#making-the-canvas-fill-the-window
+    
     background(0);
 
 

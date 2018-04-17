@@ -57,8 +57,8 @@ function setup() {
     //forcing landscape also on mobile
     var cv = createCanvas(windowWidth, windowHeight);
     var mainSection = document.querySelectorAll("*[class='main-content']")[0];
-    cv.parent(cv);
-    cv.resive(cv.width, cv.height);
+    cv.parent(mainSection);
+    cv.resize(mainSection.offsetWidth, mainSection.offsetHeight);
     background(0);
 
 

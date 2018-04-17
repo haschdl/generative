@@ -3,7 +3,6 @@ layout: default
 ---
 # Triangles
 ![São Paulo](./out/small.jpg)
->>>>>>> 8e99a0bdc48c85347837ff21b0dcfecd7aa8217d
 
 # Input
 The high-resolution satellite image was created using [SAS Planet](https://bitbucket.org/sas_team/sas.planet.bin/downloads/), with images from the Bing service. After zooming to desired area, use CTRL+A to open the Selection manager dialog. Go to Stich tab, choose a zoom factor which generates a large enough image.

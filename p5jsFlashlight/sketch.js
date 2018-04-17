@@ -1,5 +1,7 @@
 var isDebug = false;
 
+var animate = false;
+
 // prevent scrolling of page
 document.ontouchmove = function (event) {
     if (isDebug == false) {
@@ -109,6 +111,8 @@ function setup() {
 }
 
 function draw() {
+    if(animate==false)
+     return;
     var width_c = capture.width / windowWidth;
     var height_c = capture.height / windowHeight;
 
@@ -251,6 +255,10 @@ function getUserMedia() {
     return !!window.MediaStreamTrack;
 }
 
+
+function mouseMoved() {
+    animate = true;
+}
 
 function windowResized() {
     //resizeCanvas(windowWidth, windowHeight);

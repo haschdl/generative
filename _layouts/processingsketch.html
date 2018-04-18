@@ -26,7 +26,7 @@
   <body style="overflow: hidden">
     <section class="page-header" style="padding: 0">
       <h3 class="project-headline" style="display: inline; padding: 10px">
-        <a href="/">{{ site.title | default: site.github.repository_name }}</a></h3>
+        <a href="/{{site.github.repository_name }}" class="headerLink">{{ site.title | default: site.github.repository_name }}</a></h3>
       {% if site.github.is_project_page %}
         <a href="javascript:history.back()" >Back</a>
       {% endif %}

@@ -208,7 +208,7 @@ function draw() {
 
 
     if (animate == true) {
-        if (touchIsDown == false && mouseIsPressed == false) {
+        if ( mouseIsPressed == false) {
             //t_z = -100 * (cos(t / 2500));
         }
     }
@@ -217,7 +217,7 @@ function draw() {
     //rot_z = t / 10000;
 
     //earth animates only if user is not interacting
-    if (touchIsDown == false && mouseIsPressed == false) {
+    if (mouseIsPressed == false) {
         rot_y_earth = (t / 1000);
     }
 

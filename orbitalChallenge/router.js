@@ -135,7 +135,8 @@ function pointCanSeeSat(pointA,satelliteIndex1) {
 /// <returns>   . </returns>
 function pointCanSeePoint(pointA, pointB) {
     var vect_AB = p5.Vector.sub( pointA, pointB);
-    var angle = p5.Vector.angleBetween(pointB, vect_AB);
+    //var angle = p5.Vector.angleBetween(pointB, vect_AB);
+    var angle = pointB.angleBetween(vect_AB);
     var distance = pointB.mag() * sin(angle);
 
     var result = false;

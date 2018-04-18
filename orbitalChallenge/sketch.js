@@ -62,13 +62,13 @@ var enableWebGl = true;
 // P5JS specific: pre-loads images and files
 function preload() {    
     
-    imgTakingoff = loadImage("../media/takeoff.png");
-    imgLanding = loadImage("../media/landing.png");
-    img_star = loadImage("../media/star.jpg");
-    img_sat = loadImage("../media/sat.png");
-    img_earth = loadImage("../media/earth.png");
-    img_splash = loadImage("../media/hipsterlogo.png");
-    img_fire = loadImage("../media/fire.jpeg");
+    imgTakingoff = loadImage("./images/takeoff.png");
+    imgLanding = loadImage("./images/landing.png");
+    img_star = loadImage("./images/star.jpg");
+    img_sat = loadImage("./images/sat.png");
+    img_earth = loadImage("./images/earth.png");
+    img_splash = loadImage("./images/hipsterlogo.png");
+    img_fire = loadImage("./images/fire.jpeg");
 
 
 

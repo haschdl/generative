@@ -65,6 +65,11 @@ function setup() {
     
     cv.resize(windowWidth, windowHeight -  header.offsetHeight);
     
+    // Attach listeners for mouse events related to canvas
+    cv.mouseMoved(() => { animate = true });
+    cv.mouseOver(() => { animate = true });
+    cv.mouseOut(() => {animate = false });
+    
     background(0);
 
 
@@ -255,10 +260,7 @@ function getUserMedia() {
     return !!window.MediaStreamTrack;
 }
 
-
-function mouseMoved() {
-    animate = true;
-}
+  
 
 function windowResized() {
     //resizeCanvas(windowWidth, windowHeight);

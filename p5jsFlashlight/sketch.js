@@ -66,8 +66,9 @@ function setup() {
     cv.resize(windowWidth, windowHeight -  header.offsetHeight);
     
     // Attach listeners for mouse events related to canvas
-    cv.mouseOver(() => animate = true;);
-    cv.mouseOut(() => animate = false;);
+    cv.mouseMoved(() => { animate = true });
+    cv.mouseOver(() => { animate = true });
+    cv.mouseOut(() => {animate = false });
     
     background(0);
 

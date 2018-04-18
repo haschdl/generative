@@ -21,6 +21,12 @@ layout: default
   
   [![Flashlight](/p5jsFlashlight/images/flashlight_p5js_small.png)](/p5jsFlashlight)
   
+## [Interactive gallery](./mixInteractiveGallery)
+  Interactive gallery is a photography exhibition in which the audience is invited to explore the images by moving their hands, as if shedding light on a wall using a flashlight. The live installation used the Kinect device. A browser version is available, which works with mouse positions only.
+  
+  ![Interactive Gallery](./mixInteractiveGallery/images/intergall.jpg)
+
+  In this video, the position of the hands is shown on top-right right corner for illustration purposes, but it is not part of the installation.
 
 ## Technical notes
  * One generative art project per folder. 

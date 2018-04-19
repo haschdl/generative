@@ -26,7 +26,7 @@ layout: default
   
   [![Interactive Gallery](./mixInteractiveGallery/images/intergall.jpg)](./mixInteractiveGallery)
 
-# [Orbital Challenge: coding challenge flerting with 3D visualization.](./orbitalChallenge/)
+## [Orbital Challenge: coding challenge flerting with 3D visualization.](./orbitalChallenge/)
 This sketch is the 3D visualization of a routing challenge proposed by Reaktor.
 
 [![Interactive Gallery](./orbitalChallenge/images/orbital.gif)](./orbitalChallenge/)

@@ -28,6 +28,8 @@ var noiseMode = 1;
 //Which curve to use when drawing the light. 1=circle, 2=teardrop
 var curveMode = 1;
 
+var clearSketch = false;
+
 function preload() {
     var params = getURLParams();
     imgNumber = params.img;
@@ -36,6 +38,9 @@ function preload() {
     }
     if (params.debug == undefined) {
         isDebug = false;
+    }
+    if (params.clearSketch != undefined) {
+        clearSketch = true;
     }
     else {
         isDebug = true;
@@ -114,12 +119,23 @@ function setup() {
     }
 }
 
+function keyPressed() {
+
+    if(key == "S") {
+        saveCanvas();
+    }
+}
+
+
+
 function draw() {
     if(animate==false)
      return;
     var width_c = capture.width / windowWidth;
     var height_c = capture.height / windowHeight;
 
+    if(clearSketch)
+        background(0);
     noStroke();
     
     fill(0, 0,0,100);
@@ -133,7 +149,7 @@ function draw() {
 
     //filter(BLUR, 1);
     var stepSize = slider.value();
-    var r_flashlight = 300;
+    var r_flashlight = 600;
     var d = pixelDensity();
 
     //adjusting mouse coordinates to image size.
@@ -214,10 +230,10 @@ function distanceF(x, y, x0, y0, radius, noise1, noise2) {
             //TODO Apply noise to X so that flame moves a little bit
             x = x + noise1 * 5 * (2 * sin(noise2 / 300) - 1) * (y - y0) / y0;
             var distanceSq = sq(1.8 * (x - x0)) + sq((y - y0 + .9 * radius));
-            var ang = atan2(50 * (x0 - x), 2.5 * (y0 - y));
+            var ang = atan2(150 * (x0 - x), 2.5 * (y0 - y));
             ang = ang + PI;
             var m = 7;
-            var distanceT1 = sq(1.1 * radius * (cos(ang) - 1)) + sq(radius * sin(ang) * pow(sin(0.5 * ang), m));
+            var distanceT1 = sq(1.4 * radius * (cos(ang) - 1)) + sq(radius * sin(ang) * pow(sin(0.5 * ang), m));
 
 
             x = x + noise1 * 5 * (2 * sin(noise2 / 250) - 1) * (y - y0) / y0;
@@ -234,7 +250,7 @@ function distanceF(x, y, x0, y0, radius, noise1, noise2) {
             m = 7;
             var distanceT3 = sq(1.1 * radius * (cos(ang) - 1)) + sq(radius * sin(ang) * pow(sin(0.5 * ang), m));
 
-            var distanceT = Math.max(distanceT1, distanceT2, distanceT3);
+            var distanceT = distanceT1;//Math.max(distanceT1, distanceT2, distanceT3);
             return (distanceSq / distanceT);
             break;
         default:

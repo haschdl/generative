@@ -32,7 +32,7 @@ This sketch is the 3D visualization of a routing challenge proposed by Reaktor.
 [![Interactive Gallery](./orbitalChallenge/images/orbital.gif)](./orbitalChallenge/)
 
 
-## Technical notes
+# Technical notes
  * I organized the source code so that there is one generative art project per folder. 
  * Projects starting with P are [Processing](processing.org) sketches; pyXXX are Python-based, otherwise a combination of techniques & languages.
  * In Processing sketches, additional data (images, audio, video, JSON etc) used by the sketches in always in the `/data` folder of each Processing sketch.

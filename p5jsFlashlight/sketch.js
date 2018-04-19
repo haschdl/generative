@@ -72,7 +72,6 @@ function setup() {
     
     background(0);
 
-
     //when using a static image and not a camere
     //loadPixels can be called just once during startup()
     capturePixels.loadPixels();
@@ -134,9 +133,6 @@ function draw() {
 
     //filter(BLUR, 1);
     var stepSize = slider.value();
-
-
-
     var r_flashlight = 300;
     var d = pixelDensity();
 
@@ -146,8 +142,6 @@ function draw() {
 
     //playing with step and amplitude: the higher the noise, the smaller the detail
     //var stepSize_audio = round(stepSize * (1 + amp.getLevel()));
-
-
     for (var y = mouseY_c - r_flashlight * 4 ; y < mouseY_c + r_flashlight ; y += stepSize) {
         for (var x = mouseX_c - r_flashlight ; x < mouseX_c + r_flashlight ; x += stepSize) {
 
@@ -166,12 +160,10 @@ function draw() {
                     break;
             }
 
-
             var r_noise = round(r_flashlight / 2 * noiseValue);
 
             var dx = x - mouseX_c;
-            var dy = y - mouseY_c;
-            //var distance = sqrt(dx * dx + dy * dy);
+            var dy = y - mouseY_c;            
             var distance = distanceF(x, y, mouseX_c, mouseY_c, r_noise, noiseValue, millis() * noiseValue);
             if (distance <= 1) {
                 var i = 4 * (y * capture.width + x);

@@ -62,6 +62,7 @@ function preload() {
     img_star = loadImage("./images/star.jpg");
     img_sat = loadImage("./images/sat.png");
     img_earth = loadImage("./images/earth.png");
+    img_earth_transp = loadImage("./images/earthTransp.png");
     img_splash = loadImage("./images/hipsterlogo.png");
     img_fire = loadImage("./images/fire.jpeg");
 
@@ -86,7 +87,8 @@ function preload() {
 }
 
 function setup() {
-    createCanvas(windowWidth, windowHeight, WEBGL);
+    var c= createCanvas(windowWidth, windowHeight, WEBGL);
+    c.mousePressed(() => { showEarth = !showEarth;});
     coef = 1 / 3 * Math.min(height, width) / earthRadius ;
     //illustrate how I will adjust every point to screen - by multiplying by coef
     earthRadiusScreen = earthRadius * coef;
@@ -94,9 +96,10 @@ function setup() {
     loadFile();
     drawInfo();
 
-    //the initial position of the camere
+    //the initial position of the camera
     //it can be adjusted during mouseWheel event
-    t0 = createVector(0, height / 8, 0);
+    t0 = createVector(0, height / 12, 0);
+    t_z = -200;
     console.debug("p5js setup completed! Calculated radius: " + earthRadiusScreen);
 }
 
@@ -149,12 +152,9 @@ function drawInfo() {
         divInfo.id("solutionInfo");
         divInfo.parent("main-content");
         
-        createP('Tap or press G to visualize the route. Scroll or use arrows to zoom.').addClass('text').parent(divInfo);
-        createP('Solutions for seed ' + seedValue).addClass('text').parent(divInfo);
-        
-        createP('Shortest route: [' + shortestRoute.routeId + "] " + shortestRoute.toString()).addClass('text').parent(divInfo);
-        
-        //$("#offCanvasContent").replaceWith(divInfo.html());
+        createP('Tap or press G to visualize the route. Scroll or use arrows to zoom. Solutions for seed ' + seedValue
+                + '. Shortest route: [' + shortestRoute.routeId + "] " + shortestRoute.toString()).addClass('text').parent(divInfo);
+
 
         var selRoutes = createSelect(false);
         selRoutes.parent("main-content");
@@ -206,20 +206,8 @@ function draw() {
         t0.x = constrain(t0.x - 10, -1000, 1000);
     }
 
-
     translate(t0.x, t0.y, t0.z);
-    //camera(0, 0, 0);
-
-
-    if (animate == true) {
-        if ( mouseIsPressed == false) {
-            //t_z = -100 * (cos(t / 2500));
-        }
-    }
-    //scene always animates
-    //rot_y = -HALF_PI * frameCount / 800;
-    //rot_z = t / 10000;
-
+  
     //earth animates only if user is not interacting
     if (mouseIsPressed == false) {
         rot_y_earth = (t / 1000);
@@ -227,7 +215,6 @@ function draw() {
 
     push();
     rotateY(rot_y);
-    //rotateZ(rot_z);    
     translate(0, 0, t_z);
  
 
@@ -248,7 +235,10 @@ function draw() {
     }
 
     if (showEarth == true) {
-        texture(img_earth);
+        if(solved)
+             texture(img_earth_transp);
+        else
+            texture(img_earth);
         //making slightly smaller due to satellite
         //proportions
         sphere(earthRadiusScreen * .95,40);
@@ -271,7 +261,7 @@ function draw() {
         pop();
     }
 
-    //DRAWING THE source and destination spots    
+    //DRAWING source and destination spots    
     push();
     var routeFrom_s = p5.Vector.mult(routeFrom, coef);
     translate(routeFrom_s.x, routeFrom_s.y, routeFrom_s.z);
@@ -288,16 +278,15 @@ function draw() {
 
     pop();
 
-    //splash screen  for 5 seconds
-    if (typeof showIntro == 'undefined') {
-        //pointLight(255, 147, 41, 255, 0, 0, -t0.z );      
+    //splash screen  for few seconds
+    if (typeof showIntro == 'undefined') {        
         //Splash
         if (t < 4000) {
             var splash_w_0 = 0.1 * d * Math.min(width, height);
 
             push();
             //translate(-t0.x, t0.y, -t0.z);
-            translate(0, -90, 500);
+            translate(0, -55, 500);
             ambientMaterial(200, 20, 20, 40);
             plane(width, splash_w_0 * 0.66);
             texture(img_splash);
@@ -320,6 +309,7 @@ function drawRoute(routeToDraw) {
     for (var j = -1; j < len; j = j + 1) {
 
         beginShape();
+        noStroke();
         fill(255 * noise(j * pow(routeToDraw.routeId, 3)), 255 * noise(j * .981), 255 * noise(j * routeToDraw.routeId), 100);
 
         //drawing the first hop, from starting point to first satellite
@@ -524,12 +514,7 @@ function keyPressed() {
     }
 }
 
-function mouseReleased() {
-    if (enableWebGl == true) {
-        showEarth = !showEarth;
-    }
-    return true;
-}
+
 function createSolveButton() {
     buttonSubmit = createButton('solve');
     buttonSubmit.class("button").parent("main-content");    

@@ -3,7 +3,7 @@
 ## 1. Enable Github pages for you repository
 Enabling Github pages for the repository will create a web site at github.io like this:
 If the source code is at `https://github.com/usernmae/repository/`, by default your pages will be served at `https://username.github.io/repository/`
-If you have a "index.md" in the root of your repository, it you will become the "index.html" of your Github pages.
+If you have a "index.md" in the root of your repository, it you will become the "index.html" of your Github pages, and so, including your sub-folders.
 More instructions on how to enable pages [here](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages).
 I recommend you create a basic `index.md` file and make sure the `github.io` works before proceeding to the next steps.
 

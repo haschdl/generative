@@ -8,6 +8,10 @@ layout: default
 * Will be replaced with the ToC
 {:toc}
 
+## [Sunflower](./PSunflower) Sprint 2018
+[Phyllotaxis](https://en.wikipedia.org/wiki/Phyllotaxis) with Processing.
+[![Sunflower](/PSunflower/images/giphy.gif)](/PSunflower/)
+
 ## [Triangles](./PTriangles/) Spring 2018
   A collage on satellite imagery from São Paulo, more specifically from the [west access to city](https://www.google.se/maps/@-23.5254695,-46.7478157,14.44z).
   ![SaoPaulo sketch](/PTriangles/out/ssmall.jpg)

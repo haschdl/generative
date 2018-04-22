@@ -529,6 +529,10 @@ function createSolveButton() {
     });
 }
 
+//prevents scrolling. Is it working?
+function touchmoved() {
+  return false;
+}
 function mouseWheel(event) {
     t0.z = constrain(t0.z - event.delta / 5, -1000, 1000);
     //return false to block page scrolling

@@ -533,7 +533,8 @@ function createSolveButton() {
 }
 
 //prevents scrolling. Is it working?
-function touchmoved() {
+function touchMoved() {
+  preventDefault();
   return false;
 }
 function mouseWheel(event) {

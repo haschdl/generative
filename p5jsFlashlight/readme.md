@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: "index.html"
 ---
 # Flashlight
 An interactive way to explore photographs. The image is painted on the canvas in a rounded pixelated effect, as if the viewer was shedding on it with a flashlight.  

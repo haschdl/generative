@@ -512,6 +512,9 @@ function keyPressed() {
     if (key === 'G') {
         showEarth = !showEarth;
     }
+    if (key == 'V') {
+        alert('Orbital Challenge by haschdl');
+    }
 }
 
 

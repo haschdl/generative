@@ -33,6 +33,8 @@ var clearSketch = false;
 function preload() {
     var params = getURLParams();
     imgNumber = params.img;
+    
+
     if (imgNumber == undefined) {
         imgNumber = "theshining";
     }
@@ -56,9 +58,17 @@ function preload() {
         curveMode = int(params.curveMode);
     }
 
+    if (params.imgUrl != undefined) {
+        capture = loadImage(params.imgUrl);
+        capturePixels = loadImage(params.imgUrl);
+    } 
+    else {
+        capture = loadImage("./images/" + imgNumber + ".jpg");
+        capturePixels = loadImage("./images/" + imgNumber + ".jpg");
+    }
 
-    capture = loadImage("./images/" + imgNumber + ".jpg");
-    capturePixels = loadImage("./images/" + imgNumber + ".jpg");
+
+    
 }
 function setup() {
     //forcing landscape also on mobile

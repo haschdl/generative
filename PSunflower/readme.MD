@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Sunflower (Phyllotaxis with Processing)
+permalink: "index.html"
 ---
 # Phyllotaxis
 This animation is based on [Daniel Shiffman tutorial on phyllotaxis](https://www.youtube.com/watch?v=KWoJgHFYWxY&feature=youtu.be). 

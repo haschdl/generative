@@ -1,4 +1,6 @@
 # How to use Github pages to render p5.js sketches
+> The instructions below are for getting started with p5.js in Github pages. It enables you to publish interactive versions of your source code.
+> Please read the documentation for more advanced scenarios. 
 
 ## 1. Enable Github pages for you repository
 Enabling Github pages for the repository will generate nice HTML pages for your markdown files. If the source code is at `https://github.com/username/repository/`, by default your pages will be served at `https://username.github.io/repository/`
@@ -42,8 +44,8 @@ The generation of the HTML pages might take a few minutes, so start with a very 
 ## Troubleshooting
 Most of the errors I received were due to modifications in the template. If it seems like your pages are not being generated as expected, the
 first thing to check is for error messages during Github build - you get them in your inbox with subject **`Page build failure`**. This is one such messages I received:
-> _The page build failed for the `master` branch with the following error:
+> The page build failed for the `master` branch with the following error:
 > A file was included in `/_layouts/default.html` that is a symlink or does not exist in your `_includes` directory. For more information, see https://help.github.com/articles/page-build-failed-file-is-a-symlink/.
 > For information on troubleshooting Jekyll see:
 >  https://help.github.com/articles/troubleshooting-jekyll-builds
-> If you have any questions you can contact us by replying to this email._
+> If you have any questions you can contact us by replying to this email.

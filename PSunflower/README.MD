@@ -1,4 +1,8 @@
-#Phyllotaxis
+---
+layout: default
+title: Sunflower (Phyllotaxis with Processing)
+---
+# Phyllotaxis
 This animation is based on [Daniel Shiffman tutorial on phyllotaxis](https://www.youtube.com/watch?v=KWoJgHFYWxY&feature=youtu.be). 
 
 I modified the original code to mask a background image, and to change the parameters for the so-called _divergence angle_ (according to mouse X position), and the size of the initial "seed".

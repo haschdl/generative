@@ -10,6 +10,7 @@ layout: default
 
 ## [Sunflower](./PSunflower) Sprint 2018
 [Phyllotaxis](https://en.wikipedia.org/wiki/Phyllotaxis) with Processing.
+
 [![Sunflower](/PSunflower/images/giphy.gif)](/PSunflower/)
 
 ## [Triangles](./PTriangles/) Spring 2018

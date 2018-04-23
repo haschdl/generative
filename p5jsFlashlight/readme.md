@@ -1,8 +1,3 @@
----
-layout: default
-readme_index:
-  remove_originals: true
----
 # Flashlight
 An interactive way to explore photographs. The image is painted on the canvas in a rounded pixelated effect, as if the viewer was shedding on it with a flashlight.  
 

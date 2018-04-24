@@ -10,10 +10,11 @@ I modified the original code to mask a background image, and to change the param
 
 # Examples
 
-| C | Angle | Example |
-|----:|--:|--------|
-|4.05|296.98|![example](./images/example1.jpg)|
-|7.41|12.94|![example 2](./images/example2.jpg)|
+| C | Divergence angle | Example |
+|:----:|:-------:|:--------:|
+|8.92|-14.24|![example](./images/example1.jpg)|
+|5.67|-41.42|![example 2](./images/example2.jpg)|
+|8.93|162.70|![example 3](./images/example3.jpg)|
 
 
 
@@ -25,8 +26,10 @@ Here I used again the still from the movie The Shining as the background, and cr
 
 
 # How to run
-Open `sunflower.pde` in Processing. To play with other images, add them to the `data` folder and change the code with `loadImage()`:
+Open `PSunflower.pde` in Processing. To play with other images, add them to the `data` folder and change the code with `loadImage()`:
 ```java
   img = loadImage("model_1.png");
 ```
-
+Use keyboard arrows to adjust the two main parameters of this composition:  
+<kbd>LEFT</kbd>, <kbd>RIGHT</kbd>: Decreases/increases the size of the initial seeds  
+<kbd>DOWN</kbd>,<kbd>UP</kbd>: Decreases/increases the divergence angle (angle_0) 

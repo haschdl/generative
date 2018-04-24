@@ -12,9 +12,9 @@ I modified the original code to mask a background image, and to change the param
 
 | C | Divergence angle | Example |
 |:----:|:-------:|:--------:|
-|8.92|-14.24|![example](./images/example1.jpg)|
-|5.67|-41.42|![example 2](./images/example2.jpg)|
-|8.93|162.70|![example 3](./images/example3.jpg)|
+|8.92|-14.24|![example](./images/example1.jpg?s=500)|
+|5.67|-41.42|![example 2](./images/example2.jpg?s=500)|
+|8.93|162.70|![example 3](./images/example3.jpg?s=500)|
 
 
 

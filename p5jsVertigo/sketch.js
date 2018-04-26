@@ -18,7 +18,7 @@ function init() {
 
 }
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth*.9, windowHeight*.9);
   background("#C33721");
   init();
 	//just for animation purposes
@@ -31,7 +31,7 @@ function draw() {
 	}
   strokeWeight(3);
 
-  translate(windowWidth/ 2, windowHeight / 2);
+  translate(width/ 2, height / 2);
   noFill();
   //stroke(255,255,255,map(i,0,n,255,0));
 	stroke(255);

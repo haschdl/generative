@@ -18,7 +18,7 @@ function init() {
 
 }
 function setup() {
-	createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth, windowHeight);
   background("#C33721");
   init();
 	//just for animation purposes

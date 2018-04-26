@@ -8,7 +8,10 @@ layout: default
 * Will be replaced with the ToC
 {:toc}
 
-## [Sunflower](./PSunflower) Sprint 2018
+## [Vertigo](./p5jsVertigo) Spring 2018  
+A recreation of [Saul Bass](https://en.wikipedia.org/wiki/Saul_Bass) art for the cover of the movie Vertigo (1978), directed by Alfred Hitchcock.  
+[![](./p5jsVertigo/images/vertigo_small.gif)](./p5jsVertigo/)  
+## [Sunflower](./PSunflower) Spring 2018
 [Phyllotaxis](https://en.wikipedia.org/wiki/Phyllotaxis) with Processing.
 
 [![Sunflower](/PSunflower/images/giphy.gif)](/PSunflower/)

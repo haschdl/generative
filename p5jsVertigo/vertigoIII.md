@@ -8,12 +8,13 @@ In each `draw()` cycle I apply a rotation and scale down the rectangle.
 The size of the next rectangle `l`is calculated from the previous rectangle `L` according to the rotation angle as follows:  
 ![](./images/squarecalc.png)  
 
-A larger &alpha; generates less detailed image:
-|Value of &alpha;|Result|
-|:--:|:--:|
-|0.89|![](./images/vertigoIII_large_alpha.png)|
-|0.10|![](./images/vertigoIII_alpha_011.png )|
-|0.06|![](./images/vertigoIII_alpha_006.png )|
+A larger &alpha; generates less detailed image:  
+
+&alpha;|Result|&alpha;|Result
+---|---|---|---|
+0.89|![s alpha](./images/vertigoIII_large_alpha.png)|0.10|![m alpha](./images/vertigoIII_alpha_011.png)
+0.06|![l alpha](./images/vertigoIII_alpha_006.png)|0.03|![l alpha](./images/vertigoIII_alpha_003.png)
+
 
 I use the same formula in code, but I can simply reasign the new value to the same variable:
 ```javascript

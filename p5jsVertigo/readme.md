@@ -12,7 +12,7 @@
 |:----:|:-------:|:--------:|  
 |__Vertigo I__|![Vertigo I](./images/vertigo1.png)| [Live sketch](sketch.md)|  
 |__Vertigo II__|![Vertigo II](./images/vertigoII.png)|[OpenProcessing](https://www.openprocessing.org/sketch/543918)|
-|[__Vertigo III__](vertigoIII.html)|![Vertigo II](./images/vertigoIII.png)|[OpenProcessing](https://www.openprocessing.org/sketch/544091)
+|[__Vertigo III__](vertigoIII.md)|![Vertigo II](./images/vertigoIII.png)|[OpenProcessing](https://www.openprocessing.org/sketch/544091)
 
 
 # OpenProcessing 

@@ -3,7 +3,7 @@
 
 ![l alpha](./images/vertigoIII_alpha_003.png)  
 
-In Vertigo III the effect of an infinite staircase is created by drawing a sequence of squares of deacreasing size, with a small rotation in each iteration.    
+In Vertigo III the effect of an infinite staircase is created by drawing a sequence of squares of decreasing size, with a small rotation in each iteration.    
 ![](./images/squarerotation.png)
 
 For the next reactangle to fit into the previous one, I calculated the size `l` from the previous rectangle `L` according to the rotation angle as follows:  

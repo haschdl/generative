@@ -1,5 +1,5 @@
 # Vertigo III
-> Part of the [Vertigo series](./p5jsVertigo/)  
+> Part of the [Vertigo series](/p5jsVertigo/)  
 
 ![l alpha](./images/vertigoIII_alpha_003.png)  
 

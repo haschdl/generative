@@ -1,11 +1,12 @@
 # Vertigo III
 > Part of the [Vertigo series](./p5jsVertigo/)  
 
-Vertigo III is a sequence of squares drawn inside another square, painted with alternate colors.  
-In each `draw()` cycle I apply a rotation and scale down the rectangle.  
+![l alpha](./images/vertigoIII_alpha_003.png)  
+
+In Vertigo III the effect of an infinite staircase is created by drawing a sequence of squares of deacreasing size, with a small rotation in each iteration.    
 ![](./images/squarerotation.png)
 
-The size of the next rectangle `l`is calculated from the previous rectangle `L` according to the rotation angle as follows:  
+For the next reactangle to fit into the previous one, I calculated the size `l` from the previous rectangle `L` according to the rotation angle as follows:  
 ![](./images/squarecalc.png)  
 
 A larger &alpha; generates less detailed image:  
@@ -24,7 +25,7 @@ I use the same formula in code, but I can simply reasign the new value to the sa
 
 
 
-Colors are changed with modulus function:  
+To make the drawing "pop" and give a 3D illusion, the color of the rectangles are alternated with modulus function.
 ```javascript
   if(frameCount % 2 == 0)
     fill(mainColor);

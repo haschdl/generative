@@ -17,7 +17,7 @@ Template|Cropping color card|Contour detection and mask
 ![Color template](./images/colorguide.png "Color template")|![](./images/cropped.png "Image cropped")|![](./images/masked.png "Image masked")
 
 # Composition
-With all the images prepared in Python, the composition is rather simple. It tries to fill up the canvas from the top and from the bottom, adding more images in between. The animation below shows the algorithm in action.  gi
+With all the images prepared in Python, the composition is rather simple. It tries to fill up the canvas from the top and from the bottom, adding more images in between. The animation below shows the algorithm in action.
 
 ![](./images/composition.gif)
 

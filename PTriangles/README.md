@@ -1,7 +1,7 @@
 ---
 layout: default
-readme_index:
-  remove_originals: true
+title: Triangles
+permalink: "/PTriangles/index.html"
 ---
 # Triangles
 ![São Paulo](./out/small.jpg)

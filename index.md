@@ -16,6 +16,9 @@ A tribute to [Saul Bass](https://en.wikipedia.org/wiki/Saul_Bass). Recreations o
 
 [![Sunflower](/PSunflower/images/giphy.gif)](/PSunflower/)
 
+## [At the rose garden](./PRoseGarden) Summer 2018
+[![At the rose garden](/assets/03-sto-extra-rose-garden-small.jpg)](/PRoseGarden/)
+
 ## [Triangles](./PTriangles/) Spring 2018
   A collage on satellite imagery from São Paulo, more specifically from the [west access to city](https://www.google.se/maps/@-23.5254695,-46.7478157,14.44z).
   ![SaoPaulo sketch](/PTriangles/out/ssmall.jpg)

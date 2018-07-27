@@ -1,7 +1,10 @@
 /** //<>//
  "At the rose garden"
  A water-color like composition with warm colors.
- Code for 
+ Code for https://github.com/haschdl/generative/tree/master/PRoseGarden
+ 
+ Published version created using: h = 2000, w = 3000, blobRadius= 200, n_x = 30, n_y = 15,
+ basePolygon = blob(blobRadius, 10, 3);
  
  Half Scheidl, 2018 
  */
@@ -10,7 +13,7 @@ ArrayList<PVector> basePolygon = new ArrayList<PVector>();
 ArrayList<PVector> vertices = new ArrayList<PVector>();
 
 //Summer colors: https://coolors.co/e28413-f56416-dd4b1a-ef271b-ea1744
-int[] palette = new int[]{ 0xFF780116, 0xFFF7B538, 0xFFDB7C26, 0xFFD8572A, 0xFFC32F27 };
+int[] palette = new int[]{ 0xFFE28413, 0xFFF56416, 0xFFDD4B1A, 0xFFEF271B, 0xFFEA1744 };
 
 
 //int[] palette = new int[]{ 0xFFE28413, 0xFFF56416, 0xFFDD4B1A, 0xFFEF271B, 0xFFEA1744 };
@@ -19,11 +22,12 @@ int[] palette = new int[]{ 0xFF780116, 0xFFF7B538, 0xFFDB7C26, 0xFFD8572A, 0xFFC
 
 
 int h = 2000, w = 3000;
+//int h = 1000, w = 1500;
 PGraphics buffer, buffer2;
 
 float blobRadius= 200;
-int n_x = 24; int n_y = 15;
-float margin_left = blobRadius;
+int n_x = 30; int n_y = 15;
+float margin_left = blobRadius*1.2;
 float margin_top = blobRadius;
 float offsetX = (w -blobRadius - 2 * margin_left)/(n_x -1);
 float offsetY = (h -blobRadius - 2 * margin_top)/(n_y -1);
@@ -59,8 +63,8 @@ void draw() {
 
   
   buffer2.translate(offsetX*((frameCount-1)%n_x), offsetY * floor((frameCount-1)/n_x));
-  //buffer2.fill(palette[int(random(palette.length))], 12);
-  buffer2.fill(palette[frameCount % palette.length], 12);
+  buffer2.fill(palette[int(random(palette.length))], 12);
+  //buffer2.fill(palette[frameCount % palette.length], 12);
   
   //rotate a little bit
   //buffer2.translate(blobRadius/2, blobRadius/2);

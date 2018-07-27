@@ -6,7 +6,7 @@ permalink: "/PRoseGarden/index.html"
 At the rose garden
 ==================
 
-![image0](../assets/03-sto-extra-rose-garden-small.jpg)
+![image0](../assets/rose-garden-small.png)
 
 Water color effect
 ------------------
@@ -22,9 +22,10 @@ very distant from C, causing an organic feel to the distortion.
   
   
 *How the algorithm works. Images (C) Tyler Hobbs
+
 |||
+|-|-|
 |![figure1](../assets/ref-watercolor-01.png)|![figure2](../assets/ref-watercolor-02.png)|
-|-------------------------------------------|-------------------------------------------|
 |![figure3](../assets/ref-watercolor-03.png)|![figure4](../assets/ref-watercolor-04.png)|
 
 

@@ -22,10 +22,11 @@ very distant from C, causing an organic feel to the distortion.
   
   
 *How the algorithm works. Images (C) Tyler Hobbs
------------------------------------------- ------------------------------------------
-![figure1](../assets/ref-watercolor-01.png)   ![figure2](../assets/ref-watercolor-02.png)
-![figure3](../assets/ref-watercolor-03.png)   ![figure4](../assets/ref-watercolor-04.png)
------------------------------------------- ------------------------------------------
+|||
+|![figure1](../assets/ref-watercolor-01.png)|![figure2](../assets/ref-watercolor-02.png)|
+|-------------------------------------------|-------------------------------------------|
+|![figure3](../assets/ref-watercolor-03.png)|![figure4](../assets/ref-watercolor-04.png)|
+
 
 
 The `deformBlob()` method is one possible implementation of the algorithm above.

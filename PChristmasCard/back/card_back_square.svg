@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="2400"
+   height="2400"
+   viewBox="0 0 634.99999 635.00002"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="card_back_square.svg"
+   inkscape:export-filename="C:\CreativeCoding\Github\generative\PChristmasCard\back\card_back_square.png"
+   inkscape:export-xdpi="72"
+   inkscape:export-ydpi="72">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.24748737"
+     inkscape:cx="224.34947"
+     inkscape:cy="1142.208"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,338.00002)"
+     style="display:inline">
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.02280367;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect95"
+       width="553.30341"
+       height="553.30341"
+       x="40.848312"
+       y="-297.15173" />
+    <g
+       id="g3804"
+       transform="matrix(0.9,0,0,0.9,31.749999,70.068674)">
+      <text
+         id="text3726"
+         y="194.89906"
+         x="245.4399"
+         style="font-style:normal;font-weight:normal;font-size:33.4544487px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.83636117"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Playfair Display';-inkscape-font-specification:'Playfair Display';stroke-width:0.83636117"
+           y="194.89906"
+           x="245.4399"
+           id="tspan3724"
+           sodipodi:role="line">H.Scheidl</tspan></text>
+      <text
+         id="text3738"
+         y="204.62813"
+         x="246.78798"
+         style="font-style:normal;font-weight:normal;font-size:9.61178493px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.24029461"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Raleway;-inkscape-font-specification:Raleway;stroke-width:0.24029461"
+           y="204.62813"
+           x="246.78798"
+           id="tspan3736"
+           sodipodi:role="line">creative coding &amp; generative art</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:9.61178493px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.24029461"
+       x="259.89719"
+       y="-290.14655"
+       id="text3738-0"><tspan
+         sodipodi:role="line"
+         id="tspan3736-2"
+         x="259.89719"
+         y="-290.14655"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Raleway;-inkscape-font-specification:Raleway;stroke-width:0.24029461">Tempo, 2018 © H.Scheidl </tspan></text>
+  </g>
+</svg>

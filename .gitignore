@@ -23,3 +23,6 @@ hs_err_pid*
 
 #Processing local files
 sketch.html
+
+# Processing frames
+**/frames

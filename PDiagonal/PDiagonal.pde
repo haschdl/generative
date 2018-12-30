@@ -1,23 +1,32 @@
+/**
+ * An animated reproduction of the painting "Funcão Diagonal" (Diagonal function), 1952, 
+ * by artist GERALDO DE BARROS.
+ *
+ *
+ * To generate a GIF:
+ * First create video using lossless convertion
+ *    ffmpeg -r 30 -i frames/%04d.png  -c:v ffv1 anim.avi
+ * Then:
+ *    ffmpeg -i video.avi -pix_fmt rgb24 -loop_output 0 out.gif
+ */
 float SQ2 = sqrt(2)/2;
 void setup() {
   size(500, 500);
   rectMode(CENTER);
-
+  frameRate(60);
   noStroke();
 }
-float offset = -QUARTER_PI;
+
+float a0= -HALF_PI;
+float offset = a0;
 float a;
 void draw() {
   background(5);
-  offset += .015 ; 
-  //a = QUARTER_PI;
-  a=sin(offset) * QUARTER_PI;
+  a=sin(offset);
 
   translate(width/2, height/2);
-  float l = width *SQ2 * map(a/QUARTER_PI, -1, 1, .3, 1);
-
-  //animate
-  //rotate(a);
+  float l = width *SQ2 * map(a, -1, 1, 0, 1);
+  a*=QUARTER_PI;
 
   //First square
   rotate(a);
@@ -51,6 +60,13 @@ void draw() {
     popMatrix();
   }
 
-  //if (abs(a-QUARTER_PI) < 0.002)
-  //noLoop();
+
+
+  saveFrame("/frames/####.png");
+
+  offset += .025 ;
+  if (frameCount >100000) {
+    noLoop();
+    println("Loop done!");
+  }
 }

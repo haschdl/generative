@@ -1,5 +1,5 @@
 /**
- * An animated reproduction of the painting "Funcão Diagonal" (Diagonal function), 1952, 
+ * An animated reproduction of the painting "Função Diagonal" (Diagonal function), 1952, 
  * by artist GERALDO DE BARROS.
  *
  *
